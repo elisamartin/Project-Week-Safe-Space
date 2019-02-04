@@ -26,9 +26,20 @@
 	}
 
 	.video-section {
-		border: 1px solid black;
-		//background-image: url("img/video-bg.jpg");
+		height: 500px;
+
+		// background-image: url("/img/video-bg.jpg");
+		background-color: @green;
 		.flex-align(column, center);
+		img {
+			padding: 180px 0 140px 0;
+		}
+		.video-text {
+			.flex-align(column, flex-end);
+			padding-left: 90px;
+			color: white;
+			line-height: 1.5;
+		}
 	}
 
 	.about-section {
