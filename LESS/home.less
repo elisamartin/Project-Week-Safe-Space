@@ -29,9 +29,14 @@
 			button {
 				background-color: @green;
 				color: white;
-				border: none;
+				border: 1px solid @green;
 				border-radius: 25px;
 				padding: 10px 30px;
+				transition: 0.3s;
+				&:hover {
+					background-color: white;
+					color: @green;
+				}
 			}
 		}
 	}
@@ -82,6 +87,11 @@
 				border: 1px solid @green;
 				padding: 10px 30px;
 				margin: 40px 0;
+				transition: 0.3s;
+				&:hover {
+					background-color: @green;
+					color: white;
+				}
 			}
 		}
 	}

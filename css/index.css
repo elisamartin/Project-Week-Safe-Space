@@ -293,9 +293,14 @@ footer .copyright {
 .container .top-section .top-text button {
   background-color: #4cbb17;
   color: white;
-  border: none;
+  border: 1px solid #4cbb17;
   border-radius: 25px;
   padding: 10px 30px;
+  transition: 0.3s;
+}
+.container .top-section .top-text button:hover {
+  background-color: white;
+  color: #4cbb17;
 }
 .container .video-section {
   height: 500px;
@@ -361,6 +366,11 @@ footer .copyright {
   border: 1px solid #4cbb17;
   padding: 10px 30px;
   margin: 40px 0;
+  transition: 0.3s;
+}
+.container .about-section .about-text button:hover {
+  background-color: #4cbb17;
+  color: white;
 }
 .container .services-section {
   background-color: #4cbb17;
@@ -524,4 +534,10 @@ footer .copyright {
   border: 1px solid #4cbb17;
   padding: 10px 30px;
   margin-bottom: 30px;
+  transition: 0.3s;
+}
+.form-section form input[type=submit]:hover {
+  background-color: #4cbb17;
+  color: white;
+  padding: 10px 40px;
 }
