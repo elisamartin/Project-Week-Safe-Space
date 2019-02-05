@@ -1,7 +1,7 @@
 // FORM SECTION
 
 .form-section {
-	background-color: @green;
+	background: linear-gradient(rgba(76, 187, 23, .8), rgba(76, 187, 23, .8)), url("https://bit.ly/2HS7yUF");
 	color: white;
 	padding: 60px 10px;
 	.flex-align(column, stretch);
@@ -26,6 +26,9 @@
 			border: 1px solid white;
 			padding: 15px 0;
 			margin-bottom: 15px;
+			&:focus {
+				background-color: white;
+			}
 		}
 		input[type=text] {
 			@media @desktop {
