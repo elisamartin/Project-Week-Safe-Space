@@ -68,19 +68,28 @@
 		background-color: @green;
 		padding: 30px 10px;
 		.flex-align(column, center);
-		justify-content: space-around;
 
 		.services-box {
 			background-color: white;
 			padding: 20px;
 			.flex-align(column, center);
+			margin: 10px;
 			.services-icon {
-				background-color: lightgray;
+				background-color: rgb(240, 239, 239);
 				width: 300px;
 				height: 200px;
+				.flex-align(column, center);
+				justify-content: space-around;
+
+				img {
+					height: 60%;
+				}
 			}
 			.services-text {
-				padding: 10px;
+				padding: 25px;
+				h3 {
+					padding-bottom: 9px;
+				}
 			}
 		}
 	}
