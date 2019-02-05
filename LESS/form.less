@@ -13,6 +13,12 @@
 		text-align: left;
 		font-family: @text-font;
 		.flex-align(column, flex-end);
+		@media @desktop {
+			padding: 10px 80px;
+			.flex-align(row, center);
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 		input[type=text],
 		textarea {
 			width: 100%;
@@ -21,10 +27,18 @@
 			padding: 15px 0;
 			margin-bottom: 15px;
 		}
+		input[type=text] {
+			@media @desktop {
+				width: 48%;
+			}
+		}
 		textarea {
 			height: 100px;
 			resize: none;
 			font-family: @text-font;
+			@media @desktop {
+				margin-right: 1%;
+			}
 		}
 		::placeholder {
 			color: white;
