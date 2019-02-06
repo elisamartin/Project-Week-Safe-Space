@@ -292,8 +292,9 @@ footer .copyright {
   }
 }
 .container .top-section .top-text h1:after {
-  content: 'Cactus';
+  content: 'perspective';
   color: #579deb;
+  font-weight: 700;
   transform: translateX(-100%);
   position: absolute;
 }
