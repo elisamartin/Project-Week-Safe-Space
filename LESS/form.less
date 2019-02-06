@@ -6,6 +6,12 @@
 	padding: 60px 10px;
 	.flex-align(column, stretch);
 	text-align: center;
+	h2::after {
+		content: "Message";
+		font-weight: 800;
+		transform: translateX(-100%);
+		position: absolute;
+	}
 	p {
 		padding: 10px 0 20px 0;
 	}

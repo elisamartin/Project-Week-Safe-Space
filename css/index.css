@@ -140,7 +140,7 @@ a {
   font-family: 'Poppins', sans-serif;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   font-weight: 300;
 }
 h2 {
@@ -289,6 +289,12 @@ footer .copyright {
     padding-left: 0;
     text-align: start;
   }
+}
+.container .top-section .top-text h1:after {
+  content: 'Cactus';
+  color: #4cbb17;
+  transform: translateX(-100%);
+  position: absolute;
 }
 .container .top-section .top-text button {
   background-color: #4cbb17;
@@ -478,6 +484,12 @@ footer .copyright {
   flex-direction: column;
   align-items: stretch;
   text-align: center;
+}
+.form-section h2::after {
+  content: "Message";
+  font-weight: 800;
+  transform: translateX(-100%);
+  position: absolute;
 }
 .form-section p {
   padding: 10px 0 20px 0;
