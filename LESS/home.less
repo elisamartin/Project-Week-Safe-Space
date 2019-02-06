@@ -2,41 +2,57 @@
 
 .container {
 	padding: 5%;
+	max-width: 800px;
+	margin: 0 auto;
 
 	.top-section {
 		.flex-align(column, center);
+		@media @desktop {
+			.flex-align(row, center);
+			justify-content: space-around;
+			padding-bottom: 50px;
+		}
 		.top-text {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			.flex-align(column, center);
 			padding: 50px 0;
-
+			@media @desktop {
+				.flex-align(column, flex-start);
+			}
 			h1 {
 				padding: 15px;
 				text-align: center;
+				@media @desktop {
+					padding-left: 0;
+					text-align: start;
+				}
 			}
 			button {
 				background-color: @green;
 				color: white;
-				border: none;
+				border: 1px solid @green;
 				border-radius: 25px;
 				padding: 10px 30px;
+				transition: 0.3s;
+				&:hover {
+					background-color: white;
+					color: @green;
+				}
 			}
 		}
 	}
 
 	.video-section {
 		height: 500px;
-
-		// background-image: url("/img/video-bg.jpg");
-		background-color: @green;
+		background: linear-gradient(rgba(76, 187, 23, .7), rgba(76, 187, 23, .7)), url("https://bit.ly/2D5I0xU");
 		.flex-align(column, center);
+
 		img {
 			padding: 180px 0 140px 0;
 		}
 		.video-text {
+			width: 100%;
 			.flex-align(column, flex-end);
-			padding-left: 90px;
+			padding-right: 10%;
 			color: white;
 			line-height: 1.5;
 		}
@@ -45,12 +61,23 @@
 	.about-section {
 		padding: 80px 0;
 		.flex-align(column, center);
+		@media @desktop {
+			.flex-align(row, center);
+		}
 		.about-text {
 			.flex-align(column, center);
+			@media @desktop {
+				.flex-align(column, flex-start);
+				padding: 40px;
+			}
 			p {
-				padding: 25px;
+				padding-top: 25px;
 				text-align: center;
 				color: gray;
+				@media @desktop {
+					padding-left: 0;
+					text-align: start;
+				}
 			}
 			button {
 				background-color: white;
@@ -59,43 +86,90 @@
 				border-radius: 25px;
 				border: 1px solid @green;
 				padding: 10px 30px;
-				margin: 30px 0;
+				margin: 40px 0;
+				transition: 0.3s;
+				&:hover {
+					background-color: @green;
+					color: white;
+				}
 			}
 		}
 	}
 
 	.services-section {
-		background-color: @green;
+		background: linear-gradient(rgba(76, 187, 23, .7), rgba(76, 187, 23, .7)), url("https://bit.ly/2UGRVRK");
 		padding: 30px 10px;
-		.flex-align(column, center);
-		justify-content: space-around;
-
+		.flex-align(row, center);
+		flex-wrap: wrap;
+		justify-content: space-evenly;
 		.services-box {
+			height: 300px;
+			width: 210px;
 			background-color: white;
-			padding: 20px;
+			padding: 15px;
 			.flex-align(column, center);
+			margin: 8px;
 			.services-icon {
-				background-color: lightgray;
-				width: 300px;
-				height: 200px;
+				background-color: rgb(240, 239, 239);
+				width: 200px;
+				height: 130px;
+				.flex-align(column, center);
+				justify-content: space-around;
+				img {
+					height: 60%;
+				}
 			}
 			.services-text {
-				padding: 10px;
+				padding: 15px 5px;
+				h3 {
+					padding-bottom: 9px;
+				}
 			}
 		}
 	}
 
 	.faq-section {
-		padding: 10px;
+		padding: 80px 0;
 		.flex-align(column, center);
+		@media @desktop {
+			.flex-align(row, center);
+			justify-content: space-around;
+		}
 		.faq-stats {
 			padding: 10px;
 			.flex-align(column, center);
+			align-items: center;
+			@media @desktop {
+				.flex-align(column, flex-end);
+				align-items: flex-end;
+				text-align: end;
+			}
+			h1 {
+				color: @green;
+				padding: 5px;
+			}
+			p {
+				color: gray;
+				padding-bottom: 15px;
+			}
 		}
 		.faq-questions {
 			padding: 10px;
-
 			.flex-align(column, center);
+			@media @desktop {
+				width: 480px;
+				.flex-align(column, flex-start);
+				align-items: flex-start;
+				text-align: start;
+			}
+			p {
+				color: gray;
+				text-align: center;
+				padding: 20px 0;
+				@media @desktop {
+					text-align: start;
+				}
+			}
 		}
 	}
 }
