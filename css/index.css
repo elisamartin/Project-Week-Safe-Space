@@ -137,7 +137,7 @@ h5,
 h6,
 p,
 a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 h1 {
   font-size: 3.8rem;
@@ -484,7 +484,7 @@ footer .copyright {
 }
 .form-section form {
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -519,7 +519,7 @@ footer .copyright {
 .form-section form textarea {
   height: 100px;
   resize: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 @media (min-width: 1000px) {
   .form-section form textarea {
