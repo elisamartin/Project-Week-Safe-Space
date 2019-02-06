@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/index.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" async></script>
     <script src="index.js" async></script>
 </head>
 <body>
@@ -19,11 +20,12 @@
     <div class="container">
         <header>
             <img src="img/new logo.png" alt="Logo">
-            <nav>
-                <a href="index.html">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">LOG IN</a>
+            <nav class="top-nav hide">
+                <a class="hide" href="index.html">HOME</a>
+                <a class="hide" href="#">ABOUT</a>
+                <a class="hide" href="#">LOG IN</a>
             </nav>
+            <button class="h-menu"></button>
         </header>
 
         <section class="top-section">

@@ -168,7 +168,11 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-header nav {
+header .top-nav .top-nav .hide {
+  width: 0;
+  display: none;
+}
+header .top-nav .show {
   width: 50%;
   background-color: #579deb;
   padding: 10px;
@@ -178,18 +182,59 @@ header nav {
   justify-content: space-around;
 }
 @media (min-width: 1000px) {
-  header nav {
+  header .top-nav .show {
     background-color: #ffffff;
   }
 }
-header nav a {
+header .top-nav a.hide {
+  width: 0;
+  display: none;
+}
+header .top-nav a.show {
   text-decoration: none;
   color: #ffffff;
 }
 @media (min-width: 1000px) {
-  header nav a {
+  header .top-nav a.show {
     color: black;
   }
+}
+header button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+header .h-menu {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 26px;
+  background: transparent;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  transition: all 0.25s ease-in-out;
+}
+header .h-menu:before,
+header .h-menu:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-in-out;
+}
+header .active {
+  border-color: transparent;
+}
+header .active:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+header .active:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 footer {
   display: flex;
