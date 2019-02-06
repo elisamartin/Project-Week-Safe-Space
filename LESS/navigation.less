@@ -2,19 +2,20 @@ header {
 	padding: 15px 20px;
 	.flex-align(row, center);
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 	nav {
 		width: 50%;
-		background-color: @green;
+		background-color: @main-color;
 		padding: 10px;
 		.flex-align(row, center);
 		justify-content: space-around;
 		@media @desktop {
-			background-color: white;
+			background-color: @second-color;
 		}
 		a {
 			text-decoration: none;
-			color: white;
+			color: @second-color;
 			@media @desktop {
 				color: black;
 			}

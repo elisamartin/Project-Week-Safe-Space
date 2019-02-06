@@ -1,8 +1,8 @@
 // FORM SECTION
 
 .form-section {
-	background: linear-gradient(rgba(76, 187, 23, .8), rgba(76, 187, 23, .8)), url("https://bit.ly/2HS7yUF");
-	color: white;
+	background: linear-gradient(rgba(87, 169, 235, .8), rgba(87, 169, 235, .8)), url("https://bit.ly/2HS7yUF");
+	color: @second-color;
 	padding: 60px 10px;
 	.flex-align(column, stretch);
 	text-align: center;
@@ -29,11 +29,11 @@
 		textarea {
 			width: 100%;
 			background-color: transparent;
-			border: 1px solid white;
+			border: 1px solid @second-color;
 			padding: 15px 0;
 			margin-bottom: 15px;
 			&:focus {
-				background-color: white;
+				background-color: @second-color;
 			}
 		}
 		input[type=text] {
@@ -50,21 +50,21 @@
 			}
 		}
 		::placeholder {
-			color: white;
+			color: @second-color;
 			padding: 0 15px;
 		}
 		input[type=submit] {
-			background-color: white;
-			color: @green;
+			background-color: @second-color;
+			color: @main-color;
 			border: none;
 			border-radius: 25px;
-			border: 1px solid @green;
+			border: 1px solid @main-color;
 			padding: 10px 30px;
 			margin-bottom: 30px;
 			transition: 0.3s;
 			&:hover {
-				background-color: @green;
-				color: white;
+				background-color: @main-color;
+				color: @second-color;
 				padding: 10px 40px;
 			}
 		}
