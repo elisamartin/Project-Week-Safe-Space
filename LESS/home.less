@@ -117,7 +117,7 @@
 			.flex-align(column, center);
 			margin: 8px;
 			.services-icon {
-				background-color: @light-gray;
+				border: 2px solid @main-color;
 				width: 200px;
 				height: 130px;
 				.flex-align(column, center);
@@ -125,6 +125,9 @@
 				transition: 0.3s;
 				&:hover {
 					background-color: @second-color;
+					img {
+						height: 65%;
+					}
 				}
 				img {
 					height: 60%;

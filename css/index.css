@@ -462,7 +462,7 @@ footer .copyright {
   margin: 8px;
 }
 .container .services-section .services-box .services-icon {
-  background-color: #e2e2e2;
+  border: 2px solid #579deb;
   width: 200px;
   height: 130px;
   display: flex;
@@ -473,6 +473,9 @@ footer .copyright {
 }
 .container .services-section .services-box .services-icon:hover {
   background-color: #ffffff;
+}
+.container .services-section .services-box .services-icon:hover img {
+  height: 65%;
 }
 .container .services-section .services-box .services-icon img {
   height: 60%;
