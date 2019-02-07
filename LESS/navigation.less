@@ -5,18 +5,19 @@ header {
 	flex-wrap: wrap;
 
 	.top-nav {
-		.top-nav .hide {
+		.hide {
 			width: 0;
 			display: none;
 		}
 		.show {
-			width: 50%;
 			background-color: @main-color;
 			padding: 10px;
-			.flex-align(row, center);
-			justify-content: space-around;
+			.flex-align(column, space-between);
+			justify-content: flex-end;
 			@media @desktop {
 				background-color: @second-color;
+				.flex-align(row, center);
+				justify-content: flex-end;
 			}
 		}
 		a.hide {
@@ -26,8 +27,11 @@ header {
 		a.show {
 			text-decoration: none;
 			color: @second-color;
+			background-color: @main-color;
+
 			@media @desktop {
 				color: black;
+				background-color: @second-color;
 			}
 		}
 	}
