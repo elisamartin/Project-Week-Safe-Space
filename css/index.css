@@ -374,7 +374,8 @@ footer .copyright {
 }
 .container .video-section {
   height: 500px;
-  background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2D5I0xU");
+  background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2t7wcXe");
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -459,7 +460,7 @@ footer .copyright {
   }
 }
 .container .services-section {
-  background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2UGRVRK");
+  background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2GwI6Sn");
   padding: 30px 10px;
   display: flex;
   flex-direction: row;
@@ -564,7 +565,8 @@ footer .copyright {
   }
 }
 .form-section {
-  background: linear-gradient(rgba(87, 169, 235, 0.8), rgba(87, 169, 235, 0.8)), url("https://bit.ly/2HS7yUF");
+  background: linear-gradient(rgba(87, 169, 235, 0.8), rgba(87, 169, 235, 0.8)), url("https://bit.ly/2HWZKB3");
+  background-position: center;
   color: #ffffff;
   padding: 60px 10px;
   display: flex;
