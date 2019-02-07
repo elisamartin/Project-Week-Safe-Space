@@ -628,3 +628,65 @@ footer .copyright {
   color: #ffffff;
   padding: 10px 40px;
 }
+.login {
+  margin: 0 auto;
+  max-width: 380px;
+  background-color: #579deb;
+  padding: 50px;
+}
+.login label {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .login-form input[type=text],
+.login .login-form input[type=password],
+.login .login-form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.login .login-form input[type=text]:focus,
+.login .login-form input[type=password]:focus,
+.login .login-form textarea:focus {
+  background-color: #ffffff;
+}
+.login .login-form textarea {
+  height: 100px;
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+}
+@media (min-width: 1000px) {
+  .login .login-form textarea {
+    margin-right: 1%;
+  }
+}
+.login .login-form ::placeholder {
+  color: #ffffff;
+  padding: 0 15px;
+}
+.login .login-form input[type=submit] {
+  background-color: #ffffff;
+  color: #579deb;
+  border: none;
+  border-radius: 25px;
+  border: 1px solid #579deb;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.login .login-form input[type=submit]:hover {
+  background-color: #579deb;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 40px;
+}
