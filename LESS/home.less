@@ -25,17 +25,24 @@
 					padding-left: 0;
 					text-align: start;
 				}
+				&:after {
+					content: 'perspective';
+					color: @main-color;
+					font-weight: 700;
+					transform: translateX(-100%);
+					position: absolute;
+				}
 			}
 			button {
-				background-color: @green;
-				color: white;
-				border: 1px solid @green;
+				background-color: @main-color;
+				color: @second-color;
+				border: 1px solid @main-color;
 				border-radius: 25px;
 				padding: 10px 30px;
 				transition: 0.3s;
 				&:hover {
-					background-color: white;
-					color: @green;
+					background-color: @second-color;
+					color: @main-color;
 				}
 			}
 		}
@@ -43,7 +50,7 @@
 
 	.video-section {
 		height: 500px;
-		background: linear-gradient(rgba(76, 187, 23, .7), rgba(76, 187, 23, .7)), url("https://bit.ly/2D5I0xU");
+		background: linear-gradient(rgba(87, 169, 235, .7), rgba(87, 169, 235, .7)), url("https://bit.ly/2D5I0xU");
 		.flex-align(column, center);
 
 		img {
@@ -53,7 +60,7 @@
 			width: 100%;
 			.flex-align(column, flex-end);
 			padding-right: 10%;
-			color: white;
+			color: @second-color;
 			line-height: 1.5;
 		}
 	}
@@ -80,24 +87,24 @@
 				}
 			}
 			button {
-				background-color: white;
-				color: @green;
+				background-color: @second-color;
+				color: @main-color;
 				border: none;
 				border-radius: 25px;
-				border: 1px solid @green;
+				border: 1px solid @main-color;
 				padding: 10px 30px;
 				margin: 40px 0;
 				transition: 0.3s;
 				&:hover {
-					background-color: @green;
-					color: white;
+					background-color: @main-color;
+					color: @second-color;
 				}
 			}
 		}
 	}
 
 	.services-section {
-		background: linear-gradient(rgba(76, 187, 23, .7), rgba(76, 187, 23, .7)), url("https://bit.ly/2UGRVRK");
+		background: linear-gradient(rgba(87, 169, 235, .7), rgba(87, 169, 235, .7)), url("https://bit.ly/2UGRVRK");
 		padding: 30px 10px;
 		.flex-align(row, center);
 		flex-wrap: wrap;
@@ -105,16 +112,20 @@
 		.services-box {
 			height: 300px;
 			width: 210px;
-			background-color: white;
+			background-color: @second-color;
 			padding: 15px;
 			.flex-align(column, center);
 			margin: 8px;
 			.services-icon {
-				background-color: rgb(240, 239, 239);
+				background-color: @light-gray;
 				width: 200px;
 				height: 130px;
 				.flex-align(column, center);
 				justify-content: space-around;
+				transition: 0.3s;
+				&:hover {
+					background-color: @second-color;
+				}
 				img {
 					height: 60%;
 				}
@@ -145,7 +156,7 @@
 				text-align: end;
 			}
 			h1 {
-				color: @green;
+				color: @main-color;
 				padding: 5px;
 			}
 			p {
