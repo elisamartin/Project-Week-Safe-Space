@@ -68,7 +68,7 @@
 	.about-section {
 		padding: 80px 0;
 		.flex-align(column, center);
-		@media @desktop {
+		@media @tablet {
 			.flex-align(row, center);
 		}
 		.about-text {
@@ -81,6 +81,10 @@
 				padding-top: 25px;
 				text-align: center;
 				color: gray;
+				@media @tablet {
+					padding: 25px 20px 0 20px;
+					text-align: start;
+				}
 				@media @desktop {
 					padding-left: 0;
 					text-align: start;
@@ -99,6 +103,14 @@
 					background-color: @main-color;
 					color: @second-color;
 				}
+			}
+		}
+		img {
+			@media @tablet {
+				max-height: 400px;
+			}
+			@media @desktop {
+				max-height: 100%;
 			}
 		}
 	}
@@ -145,7 +157,7 @@
 	.faq-section {
 		padding: 80px 0;
 		.flex-align(column, center);
-		@media @desktop {
+		@media @tablet {
 			.flex-align(row, center);
 			justify-content: space-around;
 		}
@@ -153,7 +165,7 @@
 			padding: 10px;
 			.flex-align(column, center);
 			align-items: center;
-			@media @desktop {
+			@media @tablet {
 				.flex-align(column, flex-end);
 				align-items: flex-end;
 				text-align: end;
@@ -170,7 +182,7 @@
 		.faq-questions {
 			padding: 10px;
 			.flex-align(column, center);
-			@media @desktop {
+			@media @tablet {
 				width: 480px;
 				.flex-align(column, flex-start);
 				align-items: flex-start;
@@ -180,7 +192,7 @@
 				color: gray;
 				text-align: center;
 				padding: 20px 0;
-				@media @desktop {
+				@media @tablet {
 					text-align: start;
 				}
 			}

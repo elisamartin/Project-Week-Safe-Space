@@ -252,7 +252,7 @@ footer {
   align-items: flex-start;
   padding: 80px 10px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   footer .footer-column-group {
     width: 100%;
     display: flex;
@@ -266,7 +266,7 @@ footer .footer-column-group .footer-column {
   flex-direction: column;
   align-items: flex-start;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   footer .footer-column-group .footer-column {
     max-width: 200px;
   }
@@ -397,7 +397,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .about-section {
     display: flex;
     flex-direction: row;
@@ -422,6 +422,12 @@ footer .copyright {
   text-align: center;
   color: gray;
 }
+@media (min-width: 800px) {
+  .container .about-section .about-text p {
+    padding: 25px 20px 0 20px;
+    text-align: start;
+  }
+}
 @media (min-width: 1000px) {
   .container .about-section .about-text p {
     padding-left: 0;
@@ -441,6 +447,16 @@ footer .copyright {
 .container .about-section .about-text button:hover {
   background-color: #579deb;
   color: #ffffff;
+}
+@media (min-width: 800px) {
+  .container .about-section img {
+    max-height: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  .container .about-section img {
+    max-height: 100%;
+  }
 }
 .container .services-section {
   background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2UGRVRK");
@@ -492,7 +508,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .faq-section {
     display: flex;
     flex-direction: row;
@@ -506,7 +522,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .faq-section .faq-stats {
     display: flex;
     flex-direction: column;
@@ -528,7 +544,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .faq-section .faq-questions {
     width: 480px;
     display: flex;
@@ -542,7 +558,7 @@ footer .copyright {
   text-align: center;
   padding: 20px 0;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .faq-section .faq-questions p {
     text-align: start;
   }
@@ -571,6 +587,11 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media (min-width: 800px) {
+  .form-section form {
+    padding: 10px 50px;
+  }
 }
 @media (min-width: 1000px) {
   .form-section form {
@@ -629,7 +650,7 @@ footer .copyright {
   padding: 10px 40px;
 }
 .login {
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 380px;
   background-color: #579deb;
   padding: 50px;
