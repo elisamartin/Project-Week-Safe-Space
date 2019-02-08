@@ -1,35 +1,20 @@
-// FORM SECTION
+.login {
+	margin: 50px auto;
+	max-width: 380px;
+	background-color: @main-color;
+	padding: 50px;
 
-.form-section {
-	background: linear-gradient(rgba(87, 169, 235, .8), rgba(87, 169, 235, .8)), url("https://bit.ly/2HWZKB3");
-	background-position: center;
-	color: @second-color;
-	padding: 60px 10px;
-	.flex-align(column, stretch);
-	text-align: center;
-	h2::after {
-		content: "Message";
-		font-weight: 800;
-		transform: translateX(-100%);
-		position: absolute;
-	}
-	p {
-		padding: 10px 0 20px 0;
-	}
-	form {
-		text-align: left;
+	label {
 		font-family: @text-font;
-		.flex-align(column, flex-end);
-		@media @tablet {
-			padding: 10px 50px;
-		}
-		@media @desktop {
-			padding: 10px 80px;
-			.flex-align(row, center);
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
+		color: @second-color;
+		.flex-align(row, center);
+	}
+
+	.login-form {
+		.flex-align(column, center);
+
 		input[type=text],
+		input[type=password],
 		textarea {
 			width: 100%;
 			background-color: transparent;
@@ -40,11 +25,7 @@
 				background-color: @second-color;
 			}
 		}
-		input[type=text] {
-			@media @desktop {
-				width: 48%;
-			}
-		}
+
 		textarea {
 			height: 100px;
 			resize: none;
@@ -68,6 +49,7 @@
 			transition: 0.3s;
 			&:hover {
 				background-color: @main-color;
+				border: 1px solid @second-color;
 				color: @second-color;
 				padding: 10px 40px;
 			}

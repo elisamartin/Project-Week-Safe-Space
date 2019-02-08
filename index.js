@@ -22,7 +22,7 @@ class Menu {
 		this.content.classList.toggle('show');
 		this.links.forEach((link) => {
 			link.classList.toggle('hide');
-			link.classList.toggle('show');
+			link.classList.toggle('showA');
 		});
 	}
 	toggleCross() {

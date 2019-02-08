@@ -5,29 +5,42 @@ header {
 	flex-wrap: wrap;
 
 	.top-nav {
-		.top-nav .hide {
+		&.hide {
 			width: 0;
 			display: none;
 		}
-		.show {
-			width: 50%;
+		&.show {
 			background-color: @main-color;
-			padding: 10px;
-			.flex-align(row, center);
-			justify-content: space-around;
+			padding: 20px;
+			.flex-align(column, flex-end);
+			justify-content: space-between;
+			position: absolute;
+			top: 105px;
+			right: 8%;
+
 			@media @desktop {
 				background-color: @second-color;
+				.flex-align(row, center);
+				justify-content: space-around;
+				padding: 0 0 0 40%;
+				position: static;
 			}
 		}
 		a.hide {
 			width: 0;
 			display: none;
 		}
-		a.show {
+		a.showA {
 			text-decoration: none;
 			color: @second-color;
+			padding: 5px;
+
+			//background-color: @main-color;
+
 			@media @desktop {
 				color: black;
+				padding: 10px;
+				//background-color: @second-color;
 			}
 		}
 	}

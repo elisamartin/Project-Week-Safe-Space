@@ -168,35 +168,45 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-header .top-nav .top-nav .hide {
+header .top-nav.hide {
   width: 0;
   display: none;
 }
-header .top-nav .show {
-  width: 50%;
+header .top-nav.show {
   background-color: #579deb;
-  padding: 10px;
+  padding: 20px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  top: 105px;
+  right: 8%;
 }
 @media (min-width: 1000px) {
-  header .top-nav .show {
+  header .top-nav.show {
     background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 0 40%;
+    position: static;
   }
 }
 header .top-nav a.hide {
   width: 0;
   display: none;
 }
-header .top-nav a.show {
+header .top-nav a.showA {
   text-decoration: none;
   color: #ffffff;
+  padding: 5px;
 }
 @media (min-width: 1000px) {
-  header .top-nav a.show {
+  header .top-nav a.showA {
     color: black;
+    padding: 10px;
   }
 }
 header button {
@@ -242,7 +252,7 @@ footer {
   align-items: flex-start;
   padding: 80px 10px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   footer .footer-column-group {
     width: 100%;
     display: flex;
@@ -256,7 +266,7 @@ footer .footer-column-group .footer-column {
   flex-direction: column;
   align-items: flex-start;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   footer .footer-column-group .footer-column {
     max-width: 200px;
   }
@@ -364,7 +374,8 @@ footer .copyright {
 }
 .container .video-section {
   height: 500px;
-  background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2D5I0xU");
+  background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2t7wcXe");
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -387,7 +398,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .about-section {
     display: flex;
     flex-direction: row;
@@ -412,6 +423,12 @@ footer .copyright {
   text-align: center;
   color: gray;
 }
+@media (min-width: 800px) {
+  .container .about-section .about-text p {
+    padding: 25px 20px 0 20px;
+    text-align: start;
+  }
+}
 @media (min-width: 1000px) {
   .container .about-section .about-text p {
     padding-left: 0;
@@ -432,8 +449,18 @@ footer .copyright {
   background-color: #579deb;
   color: #ffffff;
 }
+@media (min-width: 800px) {
+  .container .about-section img {
+    max-height: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  .container .about-section img {
+    max-height: 100%;
+  }
+}
 .container .services-section {
-  background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2UGRVRK");
+  background: linear-gradient(rgba(87, 169, 235, 0.7), rgba(87, 169, 235, 0.7)), url("https://bit.ly/2GwI6Sn");
   padding: 30px 10px;
   display: flex;
   flex-direction: row;
@@ -452,7 +479,7 @@ footer .copyright {
   margin: 8px;
 }
 .container .services-section .services-box .services-icon {
-  background-color: #e2e2e2;
+  border: 2px solid #579deb;
   width: 200px;
   height: 130px;
   display: flex;
@@ -463,6 +490,9 @@ footer .copyright {
 }
 .container .services-section .services-box .services-icon:hover {
   background-color: #ffffff;
+}
+.container .services-section .services-box .services-icon:hover img {
+  height: 65%;
 }
 .container .services-section .services-box .services-icon img {
   height: 60%;
@@ -479,7 +509,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .faq-section {
     display: flex;
     flex-direction: row;
@@ -493,7 +523,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .faq-section .faq-stats {
     display: flex;
     flex-direction: column;
@@ -515,7 +545,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .faq-section .faq-questions {
     width: 480px;
     display: flex;
@@ -529,13 +559,14 @@ footer .copyright {
   text-align: center;
   padding: 20px 0;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .faq-section .faq-questions p {
     text-align: start;
   }
 }
 .form-section {
-  background: linear-gradient(rgba(87, 169, 235, 0.8), rgba(87, 169, 235, 0.8)), url("https://bit.ly/2HS7yUF");
+  background: linear-gradient(rgba(87, 169, 235, 0.8), rgba(87, 169, 235, 0.8)), url("https://bit.ly/2HWZKB3");
+  background-position: center;
   color: #ffffff;
   padding: 60px 10px;
   display: flex;
@@ -558,6 +589,11 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media (min-width: 800px) {
+  .form-section form {
+    padding: 10px 50px;
+  }
 }
 @media (min-width: 1000px) {
   .form-section form {
@@ -612,6 +648,68 @@ footer .copyright {
 }
 .form-section form input[type=submit]:hover {
   background-color: #579deb;
+  color: #ffffff;
+  padding: 10px 40px;
+}
+.login {
+  margin: 50px auto;
+  max-width: 380px;
+  background-color: #579deb;
+  padding: 50px;
+}
+.login label {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .login-form input[type=text],
+.login .login-form input[type=password],
+.login .login-form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.login .login-form input[type=text]:focus,
+.login .login-form input[type=password]:focus,
+.login .login-form textarea:focus {
+  background-color: #ffffff;
+}
+.login .login-form textarea {
+  height: 100px;
+  resize: none;
+  font-family: 'Poppins', sans-serif;
+}
+@media (min-width: 1000px) {
+  .login .login-form textarea {
+    margin-right: 1%;
+  }
+}
+.login .login-form ::placeholder {
+  color: #ffffff;
+  padding: 0 15px;
+}
+.login .login-form input[type=submit] {
+  background-color: #ffffff;
+  color: #579deb;
+  border: none;
+  border-radius: 25px;
+  border: 1px solid #579deb;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.login .login-form input[type=submit]:hover {
+  background-color: #579deb;
+  border: 1px solid #ffffff;
   color: #ffffff;
   padding: 10px 40px;
 }

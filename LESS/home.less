@@ -50,7 +50,8 @@
 
 	.video-section {
 		height: 500px;
-		background: linear-gradient(rgba(87, 169, 235, .7), rgba(87, 169, 235, .7)), url("https://bit.ly/2D5I0xU");
+		background: linear-gradient(rgba(87, 169, 235, .7), rgba(87, 169, 235, .7)), url("https://bit.ly/2t7wcXe");
+		background-position: center;
 		.flex-align(column, center);
 
 		img {
@@ -68,7 +69,7 @@
 	.about-section {
 		padding: 80px 0;
 		.flex-align(column, center);
-		@media @desktop {
+		@media @tablet {
 			.flex-align(row, center);
 		}
 		.about-text {
@@ -81,6 +82,10 @@
 				padding-top: 25px;
 				text-align: center;
 				color: gray;
+				@media @tablet {
+					padding: 25px 20px 0 20px;
+					text-align: start;
+				}
 				@media @desktop {
 					padding-left: 0;
 					text-align: start;
@@ -101,10 +106,18 @@
 				}
 			}
 		}
+		img {
+			@media @tablet {
+				max-height: 400px;
+			}
+			@media @desktop {
+				max-height: 100%;
+			}
+		}
 	}
 
 	.services-section {
-		background: linear-gradient(rgba(87, 169, 235, .7), rgba(87, 169, 235, .7)), url("https://bit.ly/2UGRVRK");
+		background: linear-gradient(rgba(87, 169, 235, .7), rgba(87, 169, 235, .7)), url("https://bit.ly/2GwI6Sn");
 		padding: 30px 10px;
 		.flex-align(row, center);
 		flex-wrap: wrap;
@@ -117,7 +130,7 @@
 			.flex-align(column, center);
 			margin: 8px;
 			.services-icon {
-				background-color: @light-gray;
+				border: 2px solid @main-color;
 				width: 200px;
 				height: 130px;
 				.flex-align(column, center);
@@ -125,6 +138,9 @@
 				transition: 0.3s;
 				&:hover {
 					background-color: @second-color;
+					img {
+						height: 65%;
+					}
 				}
 				img {
 					height: 60%;
@@ -142,7 +158,7 @@
 	.faq-section {
 		padding: 80px 0;
 		.flex-align(column, center);
-		@media @desktop {
+		@media @tablet {
 			.flex-align(row, center);
 			justify-content: space-around;
 		}
@@ -150,7 +166,7 @@
 			padding: 10px;
 			.flex-align(column, center);
 			align-items: center;
-			@media @desktop {
+			@media @tablet {
 				.flex-align(column, flex-end);
 				align-items: flex-end;
 				text-align: end;
@@ -167,7 +183,7 @@
 		.faq-questions {
 			padding: 10px;
 			.flex-align(column, center);
-			@media @desktop {
+			@media @tablet {
 				width: 480px;
 				.flex-align(column, flex-start);
 				align-items: flex-start;
@@ -177,7 +193,7 @@
 				color: gray;
 				text-align: center;
 				padding: 20px 0;
-				@media @desktop {
+				@media @tablet {
 					text-align: start;
 				}
 			}
